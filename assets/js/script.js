@@ -3,6 +3,8 @@ var form = document.querySelector(".top-banner form");
 var input = document.querySelector(".top-banner input");
 var msg = document.querySelector(".top-banner .msg");
 var list = document.querySelector(".ajax-section .cities");
+var today = moment();
+$("#currentDay").text(today.format("MMM Do, YYYY"));
 // api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 form.addEventListener("submit", e => {
@@ -24,7 +26,9 @@ form.addEventListener("submit", e => {
         var icon = `https://openweathermap.org/img/wn/${
           weather[0]["icon"]
         }@2x.png`;
-  
+
+       
+
         var li = document.createElement("li");
         li.classList.add("city");
 
@@ -36,10 +40,10 @@ form.addEventListener("submit", e => {
           </h2>
           <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
           <figure class="card-body">
+          <p class="date">${today}</p>
             <img class="city-icon" src=${icon} alt=${weather[0]["main"]}>
             <figcaption class="description">${weather[0]["description"]}</figcaption>
-          </figure>`;
-
+          </figure>`
         li.innerHTML = markup;
         list.appendChild(li);
       })

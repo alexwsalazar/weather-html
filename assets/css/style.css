@@ -93,7 +93,7 @@
   }
   
   .hero {
-    padding: 3% 4%;
+    padding: 1% 2%;
     background-color: var(--dark);
     color: var(--primary);
   }
@@ -147,7 +147,10 @@
   .icon-success {
     color: rgb(29, 153, 255);
   }
-  
+
+  .date{
+font-size: small;
+  }
   /* CARDS */
   .card {
     margin: 1 1 20px 0;
