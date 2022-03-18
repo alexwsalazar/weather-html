@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Live Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title"><i class="fab "></i> Weather.now</h1>
+    <p class=" text-uppercase align-items">Search for a City any where around the world and get live weather information.
+    </p>
+  </header>
+
+  <section class="top-banner card-header">
+    <div class="container">
+      <h1 class="heading app-title">Simple Weather App</h1>
+      <form>
+        <input class="form-input" type="text"  placeholder="Search for a city" autofocus>
+        <button class=" card btn"  type="submit " >SUBMIT</button>
+        <span class="msg icon-danger"></span>
+      </form>
+    </div>
+  </section>
+
+
+  <section class="ajax-section ">
+    <div class="container ">
+      <ul class="cities flex-row"></ul>
+    </div>
+  </section>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
