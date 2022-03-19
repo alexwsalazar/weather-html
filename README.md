@@ -14,9 +14,9 @@ This is a weather app that allows you to search any city and will give you the c
 
 
 ## 🔗 Links
-click [here](https://alexwsalazar.github.io/weather-html/) to go to my hourly planner 
+click [here](https://alexwsalazar.github.io/weather-html/) to go to my weather app 
 
-click [here](https://github.com/alexwsalazar/Planner-html) to visit the the git hub repo
+click [here](https://github.com/alexwsalazar/weather-html) to visit the the git hub repo
 
 https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric
 
